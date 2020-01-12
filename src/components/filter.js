@@ -7,7 +7,7 @@ export class Filter extends Component {
         <div className="filter-manufacturer">
           <input
             type="checkbox"
-            value={e.selected}
+            checked={e.selected}
             onChange={() => this.props.setManufacturerHandler(i)}
           />
           {e.name}
@@ -16,11 +16,12 @@ export class Filter extends Component {
     });
   };
   render() {
-    const { setSearchHandler } = this.props;
+    const { setSearchHandler, filters } = this.props;
 
     return (
       <Fragment>
         <input
+          value={filters.search}
           className="filter-search"
           onChange={e => setSearchHandler(e.target.value)}
           placeholder="Search"
