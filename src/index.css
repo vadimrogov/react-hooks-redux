@@ -1,0 +1,250 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: whitesmoke;
+}
+
+.main-nav {
+  position: fixed;
+  top: 0;
+  height: 75px;
+  width: 100%;
+  background-color: #d60022;
+  box-shadow: 0 1px 26px 0 black;
+  display: grid;
+  grid-template-columns: auto 5% 12% 7% 8% 4% 5%;
+}
+
+.main-logo img {
+  width: 75px;
+  height: 75px;
+}
+
+.main-logo {
+  vertical-align: middle;
+  text-align: center;
+  color: whitesmoke;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.nav-btn {
+  width: 100%;
+  height: 100%;
+  background: none;
+  border: none;
+  margin: 0;
+  text-align: center;
+  align-self: center;
+  color: whitesmoke;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.nav-btn:hover {
+  text-decoration: underline;
+}
+
+.common-link-btn {
+  width: 250px;
+  height: 40px;
+  background-color: #d60022;
+  border: none;
+  margin: 0;
+  text-align: center;
+  align-self: center;
+  color: whitesmoke;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.common-link-btn:hover {
+  text-decoration: underline;
+}
+
+.nav-counter {
+  background-color: white;
+  border-radius: 50%;
+  color: #d60022;
+  width: 17px;
+  height: 17px;
+  position: absolute;
+  right: 40px;
+  top: 20px;
+}
+
+.common-btn {
+  width: 250px;
+  height: 40px;
+  background-color: #d60022;
+  border: none;
+  margin: 0;
+  text-align: center;
+  align-self: center;
+  color: whitesmoke;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.common-btn:hover {
+  text-decoration: underline;
+}
+
+.page-body {
+  margin-top: 100px;
+  width: 100%;
+  height: auto;
+}
+
+.page-element {
+  margin: 3%;
+  width: auto;
+  height: auto;
+  background-color: white;
+  border: 1px solid #e5e5e5;
+  padding: 7%;
+}
+
+.shop-page {
+  display: grid;
+  grid-template-columns: 25% auto 7%;
+}
+
+.shop-items-filter-settings {
+  width: auto;
+  height: 100%;
+}
+
+.shop-items-table {
+  margin: 2px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.item-shop {
+  display: grid;
+  grid-template-rows: auto auto auto auto;
+  align-items: center;
+  width: auto;
+  height: 330px;
+}
+
+.item-header {
+  display: grid;
+  grid-template-columns: 30% auto;
+}
+
+.item-title {
+  text-align: left;
+  font-style: oblique;
+  color: black;
+  font-weight: bolder;
+}
+
+.item-about {
+  text-align: left;
+  color: gray;
+}
+
+.item-manufacturer {
+  font-size: 11px;
+  text-align: left;
+  color: gray;
+  font-weight: bolder;
+  margin: 2%;
+}
+
+.item-price {
+  padding: 5%;
+  text-align: center;
+  color: black;
+  font-style: oblique;
+  font-weight: bolder;
+}
+
+.item-tags {
+  font-size: 11px;
+  text-align: left;
+  color: gray;
+  font-weight: bolder;
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.item-tag {
+  background-color: rgb(236, 25, 25);
+  font-size: 11px;
+  color: white;
+  font-weight: bolder;
+  text-align: center;
+  margin: 1%;
+}
+
+.item-picture {
+  margin: 2px;
+  height: 70px;
+  width: 70px;
+  border-radius: 10px;
+}
+
+.filter-search {
+  margin-bottom: 5%;
+  width: 100%;
+  height: 25px;
+  font-size: 15px;
+}
+
+.filter-manufacturer {
+  font-size: 13px;
+  color: gray;
+  font-weight: bolder;
+  margin: 4%;
+}
+
+.filter-small {
+  margin-bottom: 2%;
+  width: 100%;
+  height: 25px;
+  font-size: 15px;
+}
+
+.input-field-large {
+  margin-bottom: 5%;
+  width: 100%;
+  height: 250px;
+  font-size: 15px;
+  border-color: gainsboro;
+  resize: none;
+}
+
+.cart-page {
+  display: grid;
+  grid-template-columns: auto 22% 7%;
+}
+
+.cart-total-price-section {
+  width: auto;
+  height: 180px;
+}
+
+.cart-total-price {
+  font-size: 22px;
+  font-style: italic;
+  margin-bottom: 15%;
+  text-align: center;
+}
+
+.cart-items-table {
+  margin-top: 1%;
+  display: grid;
+  grid-template-columns: 100%;
+}
+
+.item-cart {
+  margin: 1% 0 1% 0;
+  display: grid;
+  grid-template-columns: 50% 20% auto;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+
+.checkout-page {
+  text-align: center;
+}
