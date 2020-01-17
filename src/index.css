@@ -44,7 +44,7 @@ body {
   text-decoration: underline;
 }
 
-.common-link-btn {
+.CommonLinkBtn {
   width: 250px;
   height: 40px;
   background-color: #d60022;
@@ -56,7 +56,7 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.common-link-btn:hover {
+.CommonLinkBtn:hover {
   text-decoration: underline;
 }
 
@@ -236,7 +236,7 @@ body {
   grid-template-columns: 100%;
 }
 
-.item-cart {
+.ItemCart {
   margin: 1% 0 1% 0;
   display: grid;
   grid-template-columns: 50% 20% auto;
@@ -247,4 +247,24 @@ body {
 
 .checkout-page {
   text-align: center;
+}
+
+.popup-element {
+  position: fixed;
+  top: 10%;
+  left: 40%;
+  display: grid;
+  grid-template-rows: 10% auto 10%;
+  align-items: center;
+  width: 30%;
+  height: 50%;
+  z-index: 100;
+}
+
+.popup-header {
+text-align: center;
+}
+
+.img-responsive {
+  max-width: 100%;
 }
