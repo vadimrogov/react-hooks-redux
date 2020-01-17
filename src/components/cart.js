@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import { ItemCart } from "./item-cart";
-import { CommonBtn } from "./common-link-btn";
+import { ItemCart } from "./ItemCart";
+import { CommonBtn } from "./CommonLinkBtn";
 
 class Cart extends Component {
   renderItems = () => {

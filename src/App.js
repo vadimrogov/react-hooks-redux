@@ -1,11 +1,11 @@
 import React, { Component } from "react";
-import Shop from "./components/shop";
-import AboutUs from "./components/about-us";
-import ContactUs from "./components/contact-us";
-import TermsConditions from "./components/terms-conditions";
-import Checkout from "./components/checkout";
-import Cart from "./components/cart";
-import { MenuBar } from "./components/menu-bar";
+import Shop from "./components/Shop";
+import AboutUs from "./components/AboutUs";
+import ContactUs from "./components/ContactUs";
+import TermsConditions from "./components/TermsConditions";
+import Checkout from "./components/Checkout";
+import Cart from "./components/Cart";
+import { MenuBar } from "./components/MenuBar";
 import { data, manufacturers } from "./db/db";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";

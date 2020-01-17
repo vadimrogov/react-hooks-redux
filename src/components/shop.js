@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import { ItemShop } from "./item-shop";
-import { Filter } from "./filter";
+import { ItemShop } from "./ItemShop";
+import { Filter } from "./Filter";
 
 class Shop extends Component {
   renderItems = () => {

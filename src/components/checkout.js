@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { CommonBtn } from "./common-link-btn";
+import { CommonBtn } from "./CommonLinkBtn";
 
 class Checkout extends Component {
   componentDidMount() {

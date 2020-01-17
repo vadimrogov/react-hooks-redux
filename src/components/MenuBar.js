@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { NavBtn } from "./header-btn";
+import { NavBtn } from "./NavBtn";
 export class MenuBar extends Component {
   render() {
     return (
