@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { ItemCart } from "./ItemCart";
-import { CommonBtn } from "./CommonLinkBtn";
+import { CommonLinkBtn } from "./CommonLinkBtn";
 
 class Cart extends Component {
   renderItems = () => {
@@ -37,9 +37,9 @@ class Cart extends Component {
             <div className="cart-total-price">${this.calculatePrice()}</div>
           </div>
           {!this.props.items.length ? (
-            <CommonBtn linkTo={"/"} linkName={"Back to shop"} />
+            <CommonLinkBtn linkTo={"/"} linkName={"Back to shop"} />
           ) : (
-            <CommonBtn linkTo={"/checkout"} linkName={"Checkout"} />
+            <CommonLinkBtn linkTo={"/checkout"} linkName={"Checkout"} />
           )}
         </div>
       </div>

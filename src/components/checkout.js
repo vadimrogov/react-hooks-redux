@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { CommonBtn } from "./CommonLinkBtn";
+import { CommonLinkBtn } from "./CommonLinkBtn";
 
 class Checkout extends Component {
   componentDidMount() {
@@ -11,7 +11,7 @@ class Checkout extends Component {
         <div className="page-element">
           <div className="checkout-page">
             <h2>Successful!</h2>
-            <CommonBtn linkTo={"/"} linkName={"Back to shop"} />
+            <CommonLinkBtn linkTo={"/"} linkName={"Back to shop"} />
           </div>
         </div>
       </div>

@@ -5,7 +5,8 @@ class ContactUs extends Component {
   state = {
     email: "",
     msg: "",
-    popupActive: false
+    popupActive: false,
+    formDataHasError: false
   };
 
   changeEmailHandler = value =>
@@ -21,8 +22,13 @@ class ContactUs extends Component {
   flushStateHandler = () =>
     this.setState({
       email: "",
-      msg: "",
-      popupActive: true
+      msg: ""
+    });
+
+  showPopup = (showError = false) =>
+    this.setState({
+      popupActive: true,
+      formDataHasError: showError
     });
 
   closePopupHandler = () => {
@@ -31,16 +37,38 @@ class ContactUs extends Component {
     });
   };
 
+  sendContactForm = () => {
+    if (!(this.state.email.trim() && this.state.msg.trim())) {
+      this.showPopup(true);
+    } else {
+      this.showPopup();
+      this.flushStateHandler();
+    }
+  };
+
   render() {
     return (
       <Fragment>
-        {this.state.popupActive && (
-          <Popup
-            popupHeader={"Server say:"}
-            renderPopupContentHandler={() => <img class="img-responsive" src='https://blobscdn.gitbook.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-LtZJGF3BnjoLSeYeXE_%2F-LuOTLcQnAaCxuZPlxc2%2F-LuOVsoiOc6D7i8HNglF%2F2300883_3.jpg?alt=media&token=0c6d76e7-f6d9-4c08-ab92-5d7032935575' alt='no'/>}
-            closePopupContentHandler={this.closePopupHandler}
-          />
-        )}
+        {this.state.popupActive &&
+          (!this.state.formDataHasError ? (
+            <Popup
+              popupHeader={"Server say:"}
+              renderPopupContentHandler={() => (
+                <img
+                  className="img-responsive"
+                  src="https://blobscdn.gitbook.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-LtZJGF3BnjoLSeYeXE_%2F-LuOTLcQnAaCxuZPlxc2%2F-LuOVsoiOc6D7i8HNglF%2F2300883_3.jpg?alt=media&token=0c6d76e7-f6d9-4c08-ab92-5d7032935575"
+                  alt="no"
+                />
+              )}
+              closePopupContentHandler={this.closePopupHandler}
+            />
+          ) : (
+            <Popup
+              popupHeader={"Server say:"}
+              renderPopupContentHandler={() => "Server sent an error"}
+              closePopupContentHandler={this.closePopupHandler}
+            />
+          ))}
         <div className="page-body">
           <div className="page-element">
             <h2>CONTACT US</h2>
@@ -60,7 +88,7 @@ class ContactUs extends Component {
             />
             <button
               className="common-btn"
-              onClick={() => this.flushStateHandler()}
+              onClick={() => this.sendContactForm()}
             >
               Send
             </button>
