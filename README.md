@@ -6,8 +6,8 @@
 
 Для осуществления обозначенной цели служат следующие задачи:
 
-1. описание основ использования `хуков`;
-2. практика написания компонентов на `хуках`;
-3. изучение `redux`;
-4. добавление `redux` в проект.
+1. описание [основ](https://vrogov-exceedteam.gitbook.io/react-hooks-redux/react/vstuplenie) использования `хуков`;
+2. [практика](https://vrogov-exceedteam.gitbook.io/react-hooks-redux/react/react-hooks) написания компонентов на `хуках`;
+3. [изучение](https://vrogov-exceedteam.gitbook.io/react-hooks-redux/redux-1/sho-take-redaks) `redux`;
+4. [добавление](https://vrogov-exceedteam.gitbook.io/react-hooks-redux/redux-1/redux) `redux` в проект.
 
