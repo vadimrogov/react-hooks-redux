@@ -55,7 +55,7 @@ class ContactUs extends Component {
               popupHeader={"Server say:"}
               renderPopupContentHandler={() => (
                 <img
-                  class="img-responsive"
+                  className="img-responsive"
                   src="https://blobscdn.gitbook.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-LtZJGF3BnjoLSeYeXE_%2F-LuOTLcQnAaCxuZPlxc2%2F-LuOVsoiOc6D7i8HNglF%2F2300883_3.jpg?alt=media&token=0c6d76e7-f6d9-4c08-ab92-5d7032935575"
                   alt="no"
                 />

@@ -6,6 +6,7 @@ export class Filter extends Component {
       return (
         <div className="filter-manufacturer">
           <input
+          key={e.index}
             type="checkbox"
             checked={e.selected}
             onChange={() => this.props.setManufacturerHandler(i)}
