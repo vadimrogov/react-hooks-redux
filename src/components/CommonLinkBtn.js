@@ -7,7 +7,7 @@ export class CommonLinkBtn extends Component {
 
     return (
       <Link to={linkTo}>
-        <button className="CommonLinkBtn">{linkName}</button>
+        <button className="common-link-btn">{linkName}</button>
       </Link>
     );
   }

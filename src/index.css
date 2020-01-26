@@ -44,8 +44,8 @@ body {
   text-decoration: underline;
 }
 
-.CommonLinkBtn {
-  width: 250px;
+.common-link-btn {
+  width: 100%;
   height: 40px;
   background-color: #d60022;
   border: none;
@@ -56,7 +56,7 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.CommonLinkBtn:hover {
+.common-link-btn:hover {
   text-decoration: underline;
 }
 
@@ -72,7 +72,7 @@ body {
 }
 
 .common-btn {
-  width: 250px;
+  width: 100%;
   height: 40px;
   background-color: #d60022;
   border: none;
@@ -236,7 +236,7 @@ body {
   grid-template-columns: 100%;
 }
 
-.ItemCart {
+.item-cart {
   margin: 1% 0 1% 0;
   display: grid;
   grid-template-columns: 50% 20% auto;
@@ -250,15 +250,14 @@ body {
 }
 
 .popup-element {
-  position: fixed;
-  top: 10%;
-  left: 40%;
+  position: absolute;
   display: grid;
   grid-template-rows: 10% auto 10%;
   align-items: center;
   width: 30%;
   height: 50%;
   z-index: 100;
+  margin: 2% 30% auto 30%;
 }
 
 .popup-header {
@@ -266,5 +265,11 @@ text-align: center;
 }
 
 .img-responsive {
-  max-width: 100%;
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+}
+
+.popup-body {
+  text-align: center;
 }
